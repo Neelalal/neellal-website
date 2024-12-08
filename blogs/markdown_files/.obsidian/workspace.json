@@ -1,0 +1,170 @@
+{
+  "main": {
+    "id": "53f647813f12d5cb",
+    "type": "split",
+    "children": [
+      {
+        "id": "23ad805bb52e2612",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a1a2277a833c4904",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "child-tax-credits.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "child-tax-credits"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fbcd81e277bdf509",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed1e6766616edfdb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb60140bb060fdbc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8cecf9a3d8fd29a3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5772b5d3d48f6785",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ea1dc842f18fd2e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "a8e820c9e9db914f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dbec5bb2b2e03fdf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "child-tax-credits.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for child-tax-credits"
+            }
+          },
+          {
+            "id": "cdd20a2301c48147",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "child-tax-credits.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from child-tax-credits"
+            }
+          },
+          {
+            "id": "f827d25deda61018",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3606cf1ee3ffa798",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "child-tax-credits.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of child-tax-credits"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "a1a2277a833c4904",
+  "lastOpenFiles": [
+    "child-tax-credits.md",
+    "Welcome.md"
+  ]
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Neel Lal</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Garamond&display=swap">
+</head>
+<body>
+    <script src="theme-toggle.js"></script>
+    <header class="header">
+        <a href="index.html" class="name">Neel A. Lal</a>
+        <nav class="navigation">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="blog-section">
+        <h1 class="section-title">Blog</h1>
+
+        <!-- Filter by Topic -->
+        <div id="filter-section">
+            <span>Filter by Topic:</span>
+            <select id="filter-dropdown">
+                <option value="all">All Topics</option>
+                <!-- Options will be dynamically populated -->
+            </select>
+        </div>
+
+        <!-- Blog Previews -->
+        <div id="blog-container">
+            <!-- Blog posts will be dynamically added here -->
+        </div>
+    </main>
+
+    <script src="blog.js"></script>
+</body>
+</html>
