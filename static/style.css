@@ -124,7 +124,7 @@ body {
 .navigation a:hover {
     color: var(--main-prim-color);
     text-decoration: underline;
-    padding: 0px 10px; /* Adjusted padding */
+    transform: translateX(2px);
 
 }
 
