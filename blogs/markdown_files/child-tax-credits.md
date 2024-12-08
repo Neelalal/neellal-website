@@ -1,11 +1,12 @@
 ---
-title: "Understanding Child Tax Credits"
-date: "2023-12-01"
-author: "Neel A. Lal"
-tags: ["Tax Policy", "Econometrics"]
-image: "Attachments/child_tax_credits.jpg"
+title: "Research Note: Making Manual Graph Edits Replicable"
+date: 2024/12/07
+author: Neel Lal
+tags:
+  - Stata
+  - Research_Note
+image: Attachments/child_tax_credits.jpg
 ---
-
 ## Introduction
 
 Exploring the impact of child tax credits on maternal employment using novel econometric techniques.
