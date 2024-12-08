@@ -1,21 +1,62 @@
-/*:root {
-    --main-bg-color: rgb(245, 244, 236);
-    --main-prim-color: #203752;
-    --border-color:#000000;
-    --secondary-text-color:#000000;
-    --old-prim-color: #8C6373;
-    --main-text-color: #333;
-}*/
-
 :root {
-    --main-bg-color: #fff;
-    --secondary-bg-color:#f5fcff;
-    --main-prim-color: #2b2d46;
-    --border-color:#000000;
-    --secondary-text-color:#2b2d46;
-    --old-prim-color: #8C6373;
-    --main-text-color: #2b2d46;
-    --shaded-background-color: rgb(245 245 247)
+    --main-bg-color: #FFFFFF; /* White */
+    --secondary-bg-color: #F2F6F6; /* Light Blush */
+    --accent-bg-color: #DED6E0; /* Pale Lavender */
+    --main-prim-color: #2D232E; /* Raisin Black */
+    --highlight-color: #9D6381; /* China Rose */
+    --secondary-accent: #B88CA0; /* Muted Mauve */
+    --dark-accent: #4A444E; /* Charcoal Gray */
+    --highlight-hover: #D1B27C; /* Soft Gold */
+    --cool-accent: #768CA3; /* Slate Blue */
+    --text-color: #2D232E; /* Raisin Black */
+    
+    --border-color: #091717;
+    --title: #091717;
+    --subtitle: #091717;
+    --title-background: #0073AE;
+    --article-text: #091717;
+    --interact_color: #006D55;
+    --button-color: #006D55;
+    --footer-color: #1C4644 ;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: 5px; /* Adjust spacing as needed */
+    margin-bottom: 5px; /* Adjust spacing as needed */
+}
+.subtitle h2 {
+    font-size: 36px; /* Match "Working Paper" font size */
+    font-weight: bold;
+    color: var(--subtitle); /* Deep blue color */
+    text-decoration: underline;
+    text-decoration-color: var(--subtitle); /* Vibrant orange underline */
+    text-decoration-thickness: 3px; /* Underline thickness */
+    text-underline-offset: 5px; /* Space between text and underline */
+}
+
+.title {
+    text-align: center;
+}
+.title h2 {
+    font-size: 60px; /* Match "Working Paper" font size */
+    font-weight: bold;
+    color: var(--title); /* Deep blue color */
+    text-decoration: underline;
+    text-decoration-color: var(--title); /* Vibrant orange underline */
+    text-decoration-thickness: 3px; /* Underline thickness */
+    text-underline-offset: 5px; /* Space between text and underline */
+}
+
+welcome-title {
+    font-size: 36px; /* Match "Working Paper" font size */
+    font-weight: bold;
+    color: var(--subtitle); /* Deep blue color */
+    text-decoration: underline;
+    text-decoration-color: var(--subtitle); /* Vibrant orange underline */
+    text-decoration-thickness: 3px; /* Underline thickness */
+    text-underline-offset: 5px; /* Space between text and underline */
+    padding-bottom:0px;
 }
 
 
@@ -27,7 +68,7 @@ body {
     margin: 0;
 }
 
-/* Header Styles */
+
 .header {
     background-color: var(--main-bg-color); /* Light and transparent */
     position: fixed;
@@ -37,10 +78,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
     z-index: 100;
+    padding: 10px 10px;
     border-bottom: 1px solid var(--border-color);
     transition: border-bottom 0.2s ease;
+    
 }
 
 
@@ -67,21 +109,23 @@ body {
     padding: 5px 10px;
     transition: color 0.3s ease, border 0.3s ease;
     box-sizing: border-box; /* New Addition */
+    font-family: 'Lato';
+
 }
 
 .navigation li:hover {
     color: var(--main-prim-color);
     background-color: var(--shaded-background-color);
-        border: 2px solid var(--main-prim-color);
-        border-radius: 12px;
-        padding: 3px 8px; /* Adjusted padding */
 
 }
 
 .navigation a:hover {
     color: var(--main-prim-color);
     text-decoration: underline;
+    padding: 0px 10px; /* Adjusted padding */
+
 }
+
 
 .name {
     font-size: 36px;
@@ -94,24 +138,17 @@ body {
 
 /* Header Content */
 .header-content {
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+        font-family: 'Lato';
+
 }
 
 .header-content-section {
-      background-color: var(--secondary-bg-color);
     color: var(--main-prim-color); /* Font color */
-    padding: 20px; /* Optional: Add padding for spacing */
-}
+        font-family: 'Lato';
 
-/* Ensure the text inside the section is white */
-.header-content-section h1,
-.header-content-section h2,
-.header-content-section p {
-    color: var(--main-prim-color);
 }
 
 .navigation a {
@@ -129,23 +166,27 @@ body {
 .profile-photo img {
     width: 250px;
     height: auto;
+    margin-top: 90px;
     margin-right: 50px;
+    margin-left:425px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5); /* Optional: Add some shadow */
+
 }
 
 .right-section {
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-right:300px;
+
 }
 
-.welcome-note h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0 0 10px;
-}
 
 .welcome-note p {
+    font-family:'Garamond';
     font-size: 18px;
+    padding-top: 0px;   
 }
 
 .contact-info h2 {
@@ -155,20 +196,26 @@ body {
 
 .contact-info p {
     margin: 5px 0;
+    font-family:'Garamond';    
+    
 }
 .recent-projects-section {
-    background-color: var(--main-bg-color); /* Background color */
+   background-color: var(--secondary-bg-color);
+    margin-top:10px;
     padding: 40px 20px;
     text-align: center;
     position: relative; /* Make this container a positioned element */
 }
 
-.recent-projects-header {
-    color: var(--main-prim-color);
-    font-size: 36px;
+.recent-projects-subtitle h2 {
+    font-size: 36px; /* Match "Working Paper" font size */
     font-weight: bold;
-    margin-bottom: 20px;
+    color: var(--subtitle); /* Deep blue color */
+    text-decoration-thickness: 3px; /* Underline thickness */
+    text-underline-offset: 5px; /* Space between text and underline */
+    font-family:'Lato';
 }
+
 
 .projects-container {
     display: flex;
@@ -184,8 +231,8 @@ body {
 
 .article-box {
     border: 1px solid var(--border-color); /* Border color */
-    background-color: var(--secondary-bg-color); /* Box background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow */
+    background-color: var(--main-bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5); /* Optional: Add some shadow */
     width: 30%; /* Increase the width of each box */
     margin: 15px; /* Add more spacing between boxes */
     position: relative;
@@ -198,6 +245,8 @@ body {
 }
 
 .article-box-content {
+    background-color: var(--main-bg-color);
+    color: var(--article-text);
     flex: 1; /* Allow content to grow */
     display: flex;
     flex-direction: column;
@@ -206,9 +255,11 @@ body {
 }
 
 .article-box p {
+    background-color: var(--main-bg-color);
+    color: var(--article-text);
+
     font-size: 20px; /* Slightly larger text */
     font-weight: bold; /* Make text bold */
-    color: var(--main-prim-color); /* Use the primary color */
     margin-bottom: 15px; /* Add spacing below the text */
 }
 
@@ -223,12 +274,11 @@ body {
 
 .arrow {
     font-size: 48px;
-    color: var(--secondary-text-color); /* Arrow color */
+    color: var(--subtitle); /* Arrow color */
     cursor: pointer;
     user-select: none;
     position: absolute;
     top: 50%; /* Align with the middle of the boxes */
-    transform: translateY(-50%); /* Center vertically */
     z-index: 10; /* Ensure arrows are above other elements */
 }
 
@@ -266,20 +316,24 @@ body {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 25px;
-    font-size: 18px;
+    font-size: 18px;  
     font-weight: bold;
-    color: #522641; /* Button text color */
-    background-color: rgb(245, 244, 236); /* Button background color */
+    color: var(--main-bg-color); /* Button text color */
+    background-color: var(--button-color); /* Button background color */
     border: 2px solid #522641; /* Button border */
     border-radius: 5px; /* Rounded corners */
     text-decoration: none; /* Remove underline */
     transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition */
     border: 2px solid var(--border-color); /* Black border */
+    font-family:'Lato';
+
 }
 
 .resume-button:hover {
-    color: var(--main-prim-color); /* Button text color on hover */
-    border: 2px solid var(--border-color); /* Ensure border remains black on hover */
+    color: var(--button-color); /* Button text color on hover */
+    border: 2px solid var(--button-color); /* Ensure border remains black on hover */
+    background-color: var(--main-bg-color); /* Button background color */
+
 }
 
 .about-text p {
@@ -298,6 +352,7 @@ body {
 }
 
 .about-photo {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5); /* Optional: Add some shadow */
     flex: 0 0 300px; /* Fixed width for the photo */
     padding: 20px;
 }
@@ -307,25 +362,28 @@ body {
     height: auto;
     border-radius: 8px; /* Optional: Add rounded corners */
 }
-.resume-button {
-    margin-top: 20px; /* Space above the button */
-    padding: 15px 25px;
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--main-prim-color); /* Button text color */
-    background-color: var(--main-bg-color); /* Button background color */
-    border: 2px solid var(--border-color); /* Button border */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-    display: inline-block;
-    text-align: center; /* Center text within the button */
+.about-subtitle {
+    text-align: center;
+    margin-top: 5px; /* Adjust spacing as needed */
+    font-size: 36px;
 }
 
-.resume-button:hover {
-    background-color: var(--main-prim-color); /* Hover effect */
-    color: var(--main-bg-color); /* Reverse colors on hover */
-    text-decoration: underline; /* Optional: Add underline on hover */
+.about-subtitle h2{
+    font-size: 36px; /* Match "Working Paper" font size */
+    font-weight: bold;
+    color: var(--subtitle); /* Deep blue color */
+    text-decoration-thickness: 3px; /* Underline thickness */
+    text-underline-offset: 5px; /* Space between text and underline */
+    font-family:'Lato';
+}
+
+.research-subtitle h2 {
+    font-size: 36px; /* Match "Working Paper" font size */
+    font-weight: bold;
+    color: var(--subtitle); /* Deep blue color */
+    text-decoration-thickness: 3px; /* Underline thickness */
+    text-underline-offset: 5px; /* Space between text and underline */
+    font-family:'Lato';
 }
 
 .research-section {
@@ -341,6 +399,7 @@ body {
     max-width: 1200px; /* Maximum width of the content */
     margin: 0 auto; /* Center the content */
     width: 100%;
+    border-bottom: 1px solid #ccc;
 }
 
 .section-title {
@@ -354,23 +413,23 @@ body {
 }
 
 .paper-box {
-    background-color: var(--secondary-bg-color);
+    background-color: var(--main-bg-color);
     color: var(--main-prim-color);
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid var(--border-color);
     border-radius: 5px;
     text-align: left;
 }
 
+
 .paper-title {
-    color: var(--main-prim-color); /* Paper title color */
-    font-size: 20px;
+    color: var(--article-text); /* Paper title color */
+    font-size: 24px;
     font-weight: bold;
 }
 
 .paper-authors {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 10px;
 }
 
@@ -379,12 +438,14 @@ body {
 }
 
 .paper-buttons a {
+    font-weight: bold;
+    font-family: 'Lato';
     display: inline-block;
     margin-right: 10px;
     padding: 5px 10px;
-    font-size: 14px;
-    color: var(--main-prim-color);
-    background-color: var(--main-bg-color); /* Button color */
+    font-size: 16px;
+    color: var(--main-bg-color); /* Button text color */
+    background-color: var(--button-color); /* Button background color */
     border-radius: 3px;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
@@ -394,86 +455,9 @@ body {
     }
 
 .paper-buttons a:hover {
-    background-color: var(--shaded-background-color); /* Hover color */
-    color: var(--main-prim-color);
+    background-color: var(--main-bg-color); /* Hover color */
+    color: var(--button-color);
     transform: translateX(2px);
-}
-
-.blog-section {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: var(--main-bg-color);
-    color: var(--main-prim-color);
-}
-
-.section-title {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: var(--main-prim-color);
-}
-
-#filter-section {
-    margin-bottom: 30px;
-    text-align: left;
-}
-
-#filter-dropdown {
-    margin-left: 10px;
-    padding: 5px 10px;
-    font-size: 16px;
-}
-
-#blog-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.blog-preview {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    border: 1px solid var(--border-color);
-    background-color: var(--secondary-bg-color);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.blog-preview img {
-    width: 150px;
-    height: 100px;
-    border-radius: 8px;
-    object-fit: cover;
-    margin-right: 20px;
-}
-
-.blog-details {
-    text-align: left;
-    flex: 1;
-}
-
-.blog-details h3 {
-    margin: 0;
-    color: var(--main-prim-color);
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.blog-details .meta {
-    font-size: 14px;
-    color: var(--secondary-text-color);
-    margin-bottom: 10px;
-}
-
-.blog-details .synopsis {
-    color: var(--main-text-color);
-    line-height: 1.6;
-}
-
-.gray-line {
-    border: none;
-    border-top: 1px solid var(--border-color);
-    margin: 20px 0;
 }
 
 
@@ -484,6 +468,12 @@ hr {
     height: 1px;
     background-color: var(--main-bg-color);
     margin-top: 20px;
+}
+
+.footer-bottom {
+    padding: 30px;
+    background-color: var(--footer-color); /* Hover color */
+    color: var(--main-bg-color);
 }
 
 /* Footer */
