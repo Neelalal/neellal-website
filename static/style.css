@@ -18,83 +18,18 @@
     --interact_color: #006D55;
     --button-color: #006D55;
     --footer-color: #1C4644 ;
+
+    --title-size: 2.5vw;
+    --subtitle-size: 1.75vw;
+    --body-size: 1.25vw;
 }
 
-/* General Styling for Smaller Screens */
-@media (max-width: 768px) {
-    /* Adjust Navigation Bar */
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    .navigation li {
-        margin: 10px 0;
-    }
-
-    /* Adjust Header Section */
-    .header-content-section {
-        flex-direction: column;
-        text-align: center;
-    }
-    .profile-photo img {
-        width: 150px; /* Reduce image size */
-        height: auto;
-    }
-
-    /* Adjust Recent Projects */
-    .projects-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .article-box {
-        width: 90%; /* Full-width articles on mobile */
-        margin-bottom: 15px;
-    }
-
-    /* Arrow Buttons */
-    .arrow {
-        font-size: 20px; /* Reduce arrow size */
-        position: relative; /* Reposition arrows */
-        margin: 10px;
-    }
-
-    /* Footer Adjustments */
-    .footer-bottom {
-        text-align: center;
-        padding: 15px;
-    }
-}
-
-/* Very Small Screens */
-@media (max-width: 480px) {
-    /* Navigation Font Size */
-    .navigation a {
-        font-size: 16px; /* Smaller text for links */
-    }
-
-    /* Recent Projects - Stack Layout */
-    .projects-container {
-        flex-direction: column;
-    }
-    .article-box img {
-        width: 100%; /* Ensure images fit container */
-        height: auto;
-    }
-
-    /* Arrows on Small Screens */
-    .left-arrow, .right-arrow {
-        display: none; /* Hide arrows for very small screens */
-    }
-}
 
 /* Subtitles (h2) */
 h2 {
     margin-top: 20px; /* Reduce top margin */
     margin-bottom: 10px; /* Reduce bottom margin */
-    font-size: 24px; /* Adjust font size for consistency */
+    font-size: var(--subtitle-size); /* Adjust font size for consistency */
     line-height: 1.2; /* Tighter line spacing */
 }
 
@@ -109,7 +44,7 @@ p {
     margin-bottom: 5px; /* Adjust spacing as needed */
 }
 .subtitle h2 {
-    font-size: 36px; /* Match "Working Paper" font size */
+    font-size: var(--title-size); /* Match "Working Paper" font size */
     font-weight: bold;
     color: var(--subtitle); /* Deep blue color */
     text-decoration: underline;
@@ -176,7 +111,7 @@ body {
 .navigation a {
     text-decoration: none;
     color: var(--secondary-text-color);
-    font-size: 24px;
+    font-size: var(--subtitle-size);
     display: block;
     padding: 5px 10px;
     transition: color 0.3s ease, border 0.3s ease;
@@ -194,13 +129,13 @@ body {
 .navigation a:hover {
     color: var(--main-prim-color);
     text-decoration: underline;
-    transform: translateX(2px);
+    transform: translateX(.3vh);
 
 }
 
 
 .name {
-    font-size: 36px;
+    font-size: var(--title-size);
     font-weight: bold;
 
     color: var(--main-prim-color);
@@ -257,7 +192,7 @@ body {
 
 .welcome-note p {
     font-family:'Garamond';
-    font-size: 18px;
+    font-size: var(--body-size);
     padding-top: 0px;   
 }
 
@@ -280,7 +215,7 @@ body {
 }
 
 .recent-projects-subtitle h2 {
-    font-size: 36px; /* Match "Working Paper" font size */
+    font-size: var(--title-size); /* Match "Working Paper" font size */
     font-weight: bold;
     color: var(--subtitle); /* Deep blue color */
     text-decoration-thickness: 3px; /* Underline thickness */
@@ -302,13 +237,12 @@ body {
 }
 
 .article-box {
-    border: 1px solid var(--border-color); /* Border color */
+    border: .1vh solid var(--border-color); /* Border color */
     background-color: var(--main-bg-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, .5); /* Optional: Add some shadow */
     width: 30%; /* Increase the width of each box */
-    margin: 15px; /* Add more spacing between boxes */
+    margin: 2.75vh; /* Add more spacing between boxes */
     position: relative;
-    padding: 20px; /* Add padding inside the box */
     box-sizing: border-box; /* Include padding in dimensions */
     min-height: 350px; /* Increase the height of the boxes */
     display: flex; /* Use flex for alignment */
@@ -330,9 +264,9 @@ body {
     background-color: var(--main-bg-color);
     color: var(--article-text);
 
-    font-size: 20px; /* Slightly larger text */
+    font-size: 2.75vh; /* Slightly larger text */
     font-weight: bold; /* Make text bold */
-    margin-bottom: 15px; /* Add spacing below the text */
+    margin-bottom: 1.75vh; /* Add spacing below the text */
 }
 
 .article-box img {
@@ -345,7 +279,7 @@ body {
 }
 
 .arrow {
-    font-size: 48px;
+    font-size: 3.85vw;
     color: var(--subtitle); /* Arrow color */
     cursor: pointer;
     user-select: none;
@@ -355,11 +289,11 @@ body {
 }
 
 .left-arrow {
-    left: 250px; /* Adjust position as needed to the left of the boxes */
+    left: 16vw; /* Adjust position as needed to the left of the boxes */
 }
 
 .right-arrow {
-    right: 250px; /* Adjust position as needed to the right of the boxes */
+    right: 16vw; /* Adjust position as needed to the right of the boxes */
 }
 
 .arrow:hover {
@@ -388,7 +322,7 @@ body {
     display: inline-block;
     margin-top: 35px;
     padding: 15px 25px;
-    font-size: 18px;  
+    font-size: var(--body-size);  
     font-weight: bold;
     color: var(--main-bg-color); /* Button text color */
     background-color: var(--button-color); /* Button background color */
@@ -418,7 +352,7 @@ body {
 
     flex: 1;
     padding: 0px;
-    font-size: 18px;
+    font-size: var(--body-size);
     line-height: 1.6;
     text-align: left; /* Keep text left-aligned */
     display: flex;
@@ -444,13 +378,13 @@ body {
 }
 .about-subtitle {
     text-align: center;
-    font-size: 36px;
+    font-size: var(--title-size);
     margin-bottom: 20px;
 }
 
 
 .about-text h2{
-    font-size: 36px; /* Match "Working Paper" font size */
+    font-size: var(--title-size); /* Match "Working Paper" font size */
     font-weight: bold;
     color: var(--subtitle); /* Deep blue color */
     text-decoration-thickness: 3px; /* Underline thickness */
@@ -459,7 +393,7 @@ body {
 }
 
 .research-subtitle h2 {
-    font-size: 36px; /* Match "Working Paper" font size */
+    font-size: var(--title-size); /* Match "Working Paper" font size */
     font-weight: bold;
     color: var(--subtitle); /* Deep blue color */
     text-decoration-thickness: 3px; /* Underline thickness */
@@ -485,7 +419,7 @@ body {
 
 .section-title {
     color:var(--main-prim-color); /* Gray font color */
-    font-size: 24px;
+    font-size: var(--subtitle-size);
     font-weight: bold;
     margin-bottom: 10px;
     border-bottom: 2px solid var(--border-color); /* Underline */
@@ -505,7 +439,7 @@ body {
 
 .paper-title {
     color: var(--article-text); /* Paper title color */
-    font-size: 24px;
+    font-size: var(--subtitle-size);
     font-weight: bold;
 }
 
@@ -538,7 +472,7 @@ body {
 .paper-buttons a:hover {
     background-color: var(--main-bg-color); /* Hover color */
     color: var(--button-color);
-    transform: translateX(2px);
+    transform: translateX(.3vh);
 }
 
 
@@ -565,4 +499,3 @@ hr {
     color: var(--main-prim-color);
     border-top: 1px solid var(--border-color);
 }
-
